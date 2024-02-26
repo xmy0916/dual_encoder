@@ -43,7 +43,7 @@ if __name__ == '__main__':
   params.update(json_path)
   
   # Set the random seed for the whole graph for reproductible experiments
-  tf.set_random_seed(params.seed)
+  tf.set_seed(params.seed)
 
   # Save the params in model_dir
   json_path = os.path.join(args.model_dir, 'params.json')
